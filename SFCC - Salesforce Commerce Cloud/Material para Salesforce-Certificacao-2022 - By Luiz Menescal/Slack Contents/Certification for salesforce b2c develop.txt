@@ -1,0 +1,46 @@
+Certification for salesforce b2c developer 2020 (sfra based)
+
+1. An integration to a 3 party is integrate with the service framework. But before the real service call client has requested to make a test call first.
+What will you use.
+
+a. fullMock callback method with the service set in mocked mode T
+
+2. there is a need for a RESTfull service, the response need to be form encrypted what type of the service will you use?
+  a. HTTPForm T
+  b. FTP
+  c. SFTP
+  d.SAOP 
+
+3. what two answers are mandatory when reading resource in OCAPI
+  a. client_id            T
+  b. resource_ID      T
+
+4. what will be the file name if you call a custom log with   Logger.getLogger('pFeed', 'ProductFeeds' ?
+ a.  custom-pFeed-blade7-4.mon.demandware.net-0-appserver-20200712.log    T
+
+5. what is missing in the controller code ?
+ code snippet
+  a. NEXT()    T
+
+6. you what to fetch login form how will you do it?
+  a. session.forms.getForm('login')   T
+  b. session.form.getForm('login')
+  c.  session.getForm(login)
+
+7. hooks path from package.json?
+  a. "hooks": "./hooks.json      T
+  b. "hooks": ".cartridge/hooks.json
+
+8. custom object is created in a script but it throws and error (code) why?
+ a. custom object is not warped inTranslation wrapper  T
+
+9. a service configuration has been done but the requirements changed service url needs to be changed.what will you do?
+  a. go to service credentials and change URL field  T
+
+10. you have a new sandbox what you need to compile first to have a working storefront
+  a. npm run compile:js && npm run compile:scss && npm run compile:fonts  T
+  b. npm run compile:js && npm run compile:html && npm run compile:fonts
+  c. npm run compile:js && npm run compile:scss && npm run compile:html
+
+11. you created custom object but the attribute you defined are missing.why?
+  a.you need to assign attributes to group group   T

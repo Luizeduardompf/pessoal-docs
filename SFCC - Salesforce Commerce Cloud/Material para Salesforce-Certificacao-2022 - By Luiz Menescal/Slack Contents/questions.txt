@@ -1,0 +1,23 @@
+1. How to clear cache only on home page ? => Administration >  Sites >  Manage Sites > ${SiteID} - Cache
+2. Why are changes not visible on storefront after uploading the cartridge ? (activate correct code version)
+3. From which instance is code replicated to production ? (staging)
+4. What can be imported from "merchant tools/content" ? (images, folders, content assets)
+5. Choose correct cartridge path so custom code will overwrite the SFRA cartridge ( custom cartridge should be on the left side of SFRA cartridge)
+6. Why is category not visible on storefront when it is created (needs to have atlest one product, needs to be online)
+7. Difference between product set and product bundle (product set has product that can be bought separately and doesnt have allocation, bundle has both allocation for bundle and products)
+8. How to display products that are out of stock (know exactly where to find "searchable if unavailable" in BM)
+9. We have category structure like this "Women / shoes / sneakers". Sorting is set on "sneakers" category. Why sorting doesn't work when searching products on storefront (probably because sort should be set to main category "Women")
+10. What can sitemap contain (select 3 out of 5)
+11. How to display product in content slot (content type product, content type recommendation)
+12. What is default taxation type when site is created
+13. What is apple pay (payment method)
+14. Resource file question:
+    account = kilo
+    account_en = stone
+    account_en_CA = pound
+What will be used for USA ?
+15. Where are settings for page designer components (exact path of the .json file)
+16. What tools to use if for debugging code ? (pipeline profiler, logs)
+17. Why custom attribute isn't available (needs to be assigned to attribute group)
+18. What is the best way to display or not display an image depending on the locale ?
+19. Where is CSRF token implemented (middleware chain)

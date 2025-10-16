@@ -1,0 +1,217 @@
+We have a log and write in it. Stopping it continues to fill. Why this can happen.
+1) Root is woking in warning mode.
+2) Changing log required restart of the system.
+3) There is a parent of this log, still in the warning log.
+4) There is no such option, to disable it.
+
+- Transferred to the controller. As my da gi debagne6, how do you get into the sega pipelain debugger.
+1) Change the mode of debug from Pipeline to Controller.
+2) Make a new Controller debugger.
+3) We can use pipeline debugger.
+4) We can not bebug a controller.
+
+- We have custom log "abc.def" that was enabled and disabled, but it is still written in it. Why? (2 true answers)
+1) Changing log required restart of the system.
+2) Someone else writes in the corresponding log.
+*3) Root is woking in currenot mode.
+4) There is no such option, to disable it.
+
+- What about the custom logs when they overflow?
+1) Suspend for 2 hours.
+2) Start generating them in this file.
+*3) Suspend for the day.
+4) Rewrite the file and start writing it again.
+
+- We have created 2 new cartridges that do not open on the site, What could be the reasons?
+1) The active directory path has not been added to the active directory.
+*?2) The Active Directory path has not been added to the correct directory.
+3) The UX studio must be restarted to make the changes
+*4) They must be added as active cartridges.
+
+- Which log will be created by Logger.getLogger('xyz', 'abc')?
+*1) custom-xyz
+2) custom-abc
+3) customlogs-xyz
+4) customlogs-abc
+
+
+- How do we add a link to a static page with Content Asset id 'HomePage'?
+*1) $ url ('Content-Show', 'cid', 'HomePage') $
+2) $ url ('Page-Show', 'cid', 'test') $
+3) $ httpUrl ('Page-Show', 'cid', 'test') $
+3) $ httpUrl ('Content-Show', 'cid', 'test') $
+
+
+- We have a default basketball configuration (with open get? Only). How can we open it to maintain and add a product? we add and post. OCAPI
+
+- OCAPI: We have products in the basket and we change the country. What should we do to ensure that we have calculated VAT correctly:
+1) We generate a new basket with the new side.
+2) We call the calculateBasket
+
+
+- OCAPI: what is the valid URL request
+
+-Which versions of eclipse are supported by the UX studio?
+1) 4.4
+*2) 4.5
+*3) 4.6
+4) 4.7
+
+- 2 въпроса за картридж пътища, един за ds и един за isml.
+
+- How to make a form with iteration in a controller? action in xml-definition.
+
+!!!We have to make a service call, which returns us an escape response. Which type of recruiter type would you use?
+1) HTTP Form
+2) Web crowd
+3) HTTP
+4) Nothing
+
+!!!- We have a job that makes a service call to a 3rd party. In order to optimize which options you would choose.
+1) The job is synchronous
+2) The job is asynchronous
+3) Job to perform Import / export step by step
+4) .....
+
+- We have a job that makes a service call I'm an "internal system", but it's often a time out. What optimization would you do?
+1) Increase time outs of service.
+2) We fix "external system"
+3) Add logs
+4) We do nothing
+
+- We have a service call, and the client wants to have a time out time configuration, because it often cheats. How would I do that?
+*1) Add setTimeOut ()
+2) Add try / catch block
+3) We do nothing
+*?4) throw-in error when service timeout
+
+- A site can sell an unlimited number of gift vouchers to print. How should this product type be available?
+1) with 1 million
+2) with 1 million backorders and ATS
+*3) Perpetual
+4) backorder
+
+- Home page has timed us during a promotion with many users.
+After the race, it turns out we have a heavy business logic on templates. How would we fix this?
+1) Let's go to salesfoce to get their quotas fixed.
+*2) We fix the code.
+3) We do nothing. After passing the promotion we will still have a normal number of users.
+4) We release the cache for all users
+
+- Salesforce developeer has made a new category and exported it as xml-ka. Sends it to another developer. How to upload and import it?
+1) Administration>Site Development>Site Import & Export
+2) Via global directory
+3) Merchant Tools>Products & Catalogs>Import & Export
+4) Merchant Tools>Catalogs>Import & Export
+
+- There is a back-up of development in the global directory. How can a salesforce developer be able to configure a sandbox to be a copy of a develope?
+1) Administration>Site Development>Site Import & Export and upload the file
+2) Administration>Site Development>Site Import & Export and import it via global directory
+3) Upload the file via Sftp client and import it on sanbox
+4) Upload the file live to UX Studio
+
+
+- What are the 3 things you need to do to configure to make a conection to Sandbox through UX Studio?
+1) Active Directory
+2) Sandbox user name
+3) A sandbox password
+4) Password from store-ija
+5) Host for the appropriate instance
+
+- What can be imported from Merchant Tools>Content>Import & Export? 3 Answers
+1) Products
+2) Content Assets
+3) Slots
+4) Image and static files
+5) Directories
+
+- We have 1 site on the site and we want to import another. What could be broken from the existing site?
+1) Build the sites of the existing site.
+2) Storte front catalog of the current site.
+3) The Master Catalog
+4) Site preferences of the current site.
+
+Several issues with Perfomance Optimization:
+- What's the difference between Category.getOnlineProducts () and ProductHits.getProducts() ?
+
+- We want to make lazy loading of packages in a DMW script. How are we going to do it?
+1) $ .axax ()
+2) importPackage ()
+3) require ()
+
+
+- New product attribute level isAvailablefForSomething is created? How can we get its value?
+1) Product.custom.isAvailablefForSomething
+2) Product.isAvailablefForSomething
+3) Product ['isAvailablefForSomething']
+4) Product.customAttributes.isAvailablefForSomething
+
+- How to create a new custom object
+1) CustomObjectMgr.createCustomObject (id)
+2) CustomObject.createCustom (type, id)
+3) CustomObjectMgr.createCustomObject (type, id)
+3) CustomObjectMgr.createObject (type)
+
+
+- We want to make products with different locales for information on one site. How do we do it?
+System or attribute attributes at product level that are localized.
+
+- We want to keep customer`s information for vouchers, birthday and so on, which are introduced during the check-in. The most appropriate place is:
+1) pdict
+2) custom object
+3) session
+4) form
+
+- We see that there is a problem in the code, most likely it is semantic. How best would we check this out.
+1) We put try / catch blocks
+2) We add error logs
+3) Check Input Parameters
+4) We check the variables
+
+- A piece of code
+
+var Log = require ('Logger')
+try {
+bastet.addProduct (product)
+}
+catch (e) {...}
+How it would look like the correct error logging log in Basket in error mode and stracktrace.
+
+1) Logger.getLogger ('Basket') error ("$ {product} - $ {e.stackTrace}")
+2) Logger.getLoggerError ('Basket', 'Could not add product to the basket $ {product} - $ {e.stackTrace}")
+3) Logger.getLogger ('Basket'). Error ("Product, e.stackTrace") - {1}
+4) Logger.getLoggerError ('Basket', 'Could not add product to the basket {0} - {1}', product, e.stackTrace)
+
+"Kustomer can make anarchists with addresses for different countries. We want this party information to be visible on the order details page in My Account?
+How can we do that?
+1) Add a new Order attribute and call PostOrderCreation
+2) Add a new Profile attribute and call PostCustomerCreation
+3) With the Export export, we add the new attribute
+4) Do not do it
+
+- We want to add a new locale de. In which directory do we put it?
+- We have a defoliated property file product.properties. How will it be said and where will the localized de file be located?
+
+- We have \one\two\product\show.isml. How do we render such template?
+1) Isml.renderTemplate ('one \ two \ product \ show.isml')
+2) Isml.render ('one \ two \ product \ show.isml')
+3) Isml.view ('one \ two \ product \ show.isml')
+4) Isml.viewTemplate ('one \ two \ product \ show.isml')
+
+- We want to disable  Maestro Cards. Where do we go from?
+1) Merchant Tools>Ordering>Payment Methods
+2) Administration>Global Preferences>Import & Export
+3) Merchant Tools>Payment Processors>Payment Methods
+4) Stop all cards
+
+- We want to enable Apple Pay. Where does this happen?
+
+- We have 100 master product, 250 simple products. How can we generate bundles?
+
+- Storefront toolkit  how to vew cache information for specific page?
+*1) Hover over the icon up / left on the storefront
+2) Use UX Studio, using current decorator
+
+- Catalog export: export all product not assigned to the storefront catalog
+*1) Export Specific Products button in Export Catalog and select Advanced tab to export unassigned products only.
+2) Export Specific Products button in Export Catalog and select Advanced tab to export only to assigned category.

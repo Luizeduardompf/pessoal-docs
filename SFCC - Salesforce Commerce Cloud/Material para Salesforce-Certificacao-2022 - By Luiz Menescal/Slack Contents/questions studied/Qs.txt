@@ -1,0 +1,82 @@
+1. What do you need at minimum to establish Sandbox connection?
+username | password | sandbox domain | business manager url | encrypted key | WebDAV access
+
+2. We should avoid caching?
+on production instance | when a page is called frequently | when the informatin on the page is updated frequently x
+
+3. Where are custom tags defined?
+util/custom.isml | modules/custom.isml | util/modules.isml x| modules/tags.isml
+
+4. Which forms does the Cart-Show pipeline use? 
+cart x| product | login x| creditcard
+
+5. Data replication moves
+code | images | shipping methods | catalogs | content slot definitions
+
+6. Where can we add new content slot?
+in .isml template x| 
+in busines manager under Content / Content Slots | 
+in busines manager under Online Marketing / Content Slots |
+all of the above
+
+7. What is the purpose of a page type template?
+It is the content wrapped by another template |
+It is included in another template |
+It includes the output of a pipeline |
+It is used to wrap the content of a page x
+
+8. Which actions occur when an enforced quota is violated?
+The platform writes the exception to the quota logs x|
+The platform prompts operations personnel to override the quota |
+The platform prevents the operation from completing x|
+The platform sends an email to inform operations personnel that after two more exceptions, subsequent violations will prevent the operation from completing
+
+9. A business user wants to add a PLP link to a content page in the body of a content asset. 
+he category's ID is: `terms-and-conditions`. 
+Which link function will generate the correct link?
+`$url('Search-Show', 'cid', ‘terms-and-conditions‘)$`| 
+`$httpUrl('Content-Show', 'cid', 'terms-and-conditions')$` | 
+`$include('Search-ShowContent', 'cid', 'terms-and-conditions')$` | 
+`$url('Page-Show', 'cid', 'terms-and-conditions')$` x| 
+
+10. You need to add a new locale to the existing build that has UK translations
+Where does the translations for the new locale need to be ?
+uk_checkout.properties in resources folder | 
+checkout.properties in uk folder | 
+uk_checkout.properties in default folder | 
+checkout_uk.properties in resources folder x| 
+
+11. Need to insert slot on home page that will render content, what is correct line?
+<isslot id="home-slot-00" description="Homepage - slot 00" context="content"  type=”global”/> | 
+<isslot id="home-slot-00" description="Homepage - slot 00" context="global" /> x| 
+<isslot id="home-slot-00" description="Homepage - slot 00" type=”global” context="homepage" /> | 
+<isslot id="home-slot-00" description="Homepage - slot 00" context="global" context-object="${pdict.metaHomepage}" /> | 
+
+12. We have Site exported on global level on staging instance. How can you get this into local developer sandbox:
+Use Business Manager Site Import & Export on local sandbox x| 
+Use WebDAV | 
+Use SFTP | 
+
+13. In order to clear cache on 5 sites we need to?
+Goto Administration >  Sites >  Manage Sites > Site > Cache clear for each site x| 
+Run a system job for clearing cache on all sites at once |
+Administration >  Operations >  Services run cache clear service for all sites
+
+14. In order to perform search reindex on 5 sites we need to?
+Goto Merchant Tools >  Search >  Search Indexes then reindex for each site x| 
+Run a system job for clearing cache on all sites at once | 
+Administration >  Operations >  Services run search reindex service for all sites
+
+15.
+
+
+
+
+
+
+
+
+
+
+
+

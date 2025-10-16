@@ -1,0 +1,62 @@
+More questions
+
+1. How to clear cache only on home page ? => Administration >  Sites >  Manage Sites > ${SiteID} - Cache
+2. Why are changes not visible on storefront after uploading the cartridge ? (activate correct code version)
+3. From which instance is code replicated to production ? (staging)
+4. What can be imported from "merchant tools/content" ? (images, folders, content assets)
+5. Choose correct cartridge path so custom code will overwrite the SFRA cartridge ( custom cartridge should be on the left side of SFRA cartridge)
+6. Why is category not visible on storefront when it is created (needs to have atlest one product, needs to be online)
+7. Difference between product set and product bundle (product set has product that can be bought separately and doesnt have allocation, bundle has both allocation for bundle and products)
+8. How to display products that are out of stock (know exactly where to find "searchable if unavailable" in BM)
+9. We have category structure like this "Women / shoes / sneakers". Sorting is set on "sneakers" category. Why sorting doesn't work when searching products on storefront (probably because sort should be set to main category "Women")
+10. What can sitemap contain (select 3 out of 5)
+11. How to display product in content slot (content type product, content type recommendation)
+12. What is default taxation type when site is created
+13. What is apple pay (payment method)
+14. Resource file question:
+    account = kilo
+    account_en = stone
+    account_en_CA = pound
+What will be used for USA ?
+15. Where are settings for page designer components (exact path of the .json file)
+16. What tools to use if for debugging code ? (pipeline profiler, logs)
+17. Why custom attribute isn't available (needs to be assigned to attribute group)
+18. What is the best way to display or not display an image depending on the locale ?
+19. Where is CSRF token implemented (middleware chain)
+
+More
+
+Certification for salesforce b2c developer 2020 (sfra based)
+1. An integration to a 3 party is integrate with the service framework. But before the real service call client has requested to make a test call first.
+What will you use.
+a. fullMock callback method with the service set in mocked mode T
+2. there is a need for a RESTfull service, the response need to be form encrypted what type of the service will you use?
+  a. HTTPForm T
+  b. FTP
+  c. SFTP
+  d.SAOP 
+3. what two answers are mandatory when reading resource in OCAPI
+  a. client_id            T
+  b. resource_ID      T
+4. what will be the file name if you call a custom log with   Logger.getLogger('pFeed', 'ProductFeeds' ?
+ a.  custom-pFeed-blade7-4.mon.demandware.net-0-appserver-20200712.log    T
+5. what is missing in the controller code ?
+ code snippet
+  a. NEXT()    T
+6. you what to fetch login form how will you do it?
+  a. session.forms.getForm('login')   T
+  b. session.form.getForm('login')
+  c.  session.getForm(login)
+7. hooks path from package.json?
+  a. "hooks": "./hooks.json      T
+  b. "hooks": ".cartridge/hooks.json
+8. custom object is created in a script but it throws and error (code) why?
+ a. custom object is not warped inTranslation wrapper  T
+9. a service configuration has been done but the requirements changed service url needs to be changed.what will you do?
+  a. go to service credentials and change URL field  T
+10. you have a new sandbox what you need to compile first to have a working storefront
+  a. npm run compile:js && npm run compile:scss && npm run compile:fonts  T
+  b. npm run compile:js && npm run compile:html && npm run compile:fonts
+  c. npm run compile:js && npm run compile:scss && npm run compile:html
+11. you created custom object but the attribute you defined are missing.why?
+  a.you need to assign attributes to group group   T
