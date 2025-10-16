@@ -1,12 +1,5 @@
 # RENOVAÇÃO DE CERTIFICADO SSL - SALESFORCE COMMERCE CLOUD (SFCC)
 
-## 📋 INFORMAÇÕES GERAIS
-
-**Data de Criação:** $(date)  
-**Versão:** 1.0  
-**Autor:** Equipe de Desenvolvimento  
-**Frequência:** Anual (renovação obrigatória)  
-
 ---
 
 ## 🎯 OBJETIVO
@@ -30,7 +23,6 @@ Você deve ter em mãos:
 - ✅ `certificado.key` (chave privada atual)
 - ✅ `certificado.conf` (arquivo de configuração)
 - ✅ Acesso ao Business Manager (BM) do SFCC
-- ✅ Acesso à CA (Certificate Authority) do cliente
 
 ---
 
@@ -56,11 +48,17 @@ openssl req -new -key certificado.key -out certificado_renovacao.csr -config cer
 openssl req -in certificado_renovacao.csr -text -noout
 ```
 
-**📝 Nota:** O arquivo `certificado_renovacao.csr` será enviado para a CA.
+**📝 Nota:** O arquivo `certificado_renovacao.csr` deve ser enviado para o cliente, e o mesmo deve aceder a sua CA. Com essa informação (csr) ele irá gerar um CRT.
+
+Uma CA - Certificate Authority é uma entidade confiável que emite e gerencia certificados digitais SSL/TLS.
+
+É como um "cartório digital" que confirma a identidade de websites e organizações na internet.
 
 ---
 
-### **PASSO 2: SOLICITAÇÃO DO NOVO CERTIFICADO**
+### **PASSO 2: SOLICITAÇÃO DO NOVO CERTIFICADO** 
+
+=> ****ESTE PASSO SERÁ REALIZADO PELO CLIENTE****
 
 #### 2.1 Acessar a CA do cliente
 - Entre no portal da CA (DigiCert, Comodo, Let's Encrypt, etc.)
@@ -87,12 +85,19 @@ openssl req -in certificado_renovacao.csr -text -noout
 
 ### **PASSO 3: DOWNLOAD DO NOVO CERTIFICADO**
 
+=> ****ESTE PASSO SERÁ REALIZADO PELO CLIENTE****
+
 #### 3.1 Baixar o certificado
 - Acesse o portal da CA
 - Baixe o certificado em formato `.crt` ou `.pem`
 - **Salve como:** `certificado_novo.crt`
+- **Enviar para a equipa SFCC**
 
-#### 3.2 Verificar o certificado
+---
+
+### **PASSO 4: UPLOAD NO BUSINESS MANAGER (BM)**
+
+#### Verificar o certificado recebido do cliente
 ```bash
 # Verificar data de validade
 openssl x509 -in certificado_novo.crt -text -noout | grep "Not After"
@@ -104,14 +109,10 @@ openssl rsa -noout -modulus -in certificado.key | openssl md5
 
 **✅ Os hashes devem ser iguais!**
 
----
-
-### **PASSO 4: UPLOAD NO BUSINESS MANAGER (BM)**
-
 #### 4.1 Acessar o BM
-1. **URL:** `https://[tenant].demandware.net`
+1. **URL:** `Business Manager do Cliente`
 2. **Login:** Use as credenciais administrativas
-3. **Navegue para:** `Administration > Organization > Security`
+3. **Navegue para:** `Administration > Sites > Embedded CDN Settings`
 
 #### 4.2 Upload do certificado
 1. **Clique em "Certificates" ou "Certificados"**
